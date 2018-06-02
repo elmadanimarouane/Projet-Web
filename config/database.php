@@ -43,7 +43,7 @@ return [
             'driver' => 'mysql',
             'host' => env('DB_HOST', 'db4free.net'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'polybets'),
+            'database' => env('DB_DATABASE', 'projetweb'),
             'username' => env('DB_USERNAME', 'melmadani'),
             'password' => env('DB_PASSWORD', 'melmadani2406'),
             'unix_socket' => env('DB_SOCKET', ''),
