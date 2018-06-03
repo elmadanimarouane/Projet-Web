@@ -31,7 +31,7 @@ class ArticleController extends Controller
         $article->verdict = $request->input('verdict');
 
         $article->save();
-        return redirect()->route('accueil');
+        return redirect()->route('/');
 
     }
     public function index()
@@ -45,7 +45,7 @@ class ArticleController extends Controller
 
         $article = Article::findOrFail($id);
         $article->delete();
-        return redirect('accueil')->with('message', 'Article créé avec succès');
+        return redirect('/');
     }
 
     public function edit($id)
@@ -68,7 +68,7 @@ class ArticleController extends Controller
         $article->verdict = $request->input('verdict');
 
         $article->update();
-        return redirect()->route('accueil');
+        return redirect()->route('/');
 
     }
 
