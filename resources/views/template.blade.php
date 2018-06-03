@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('css/navbarstyle.css') }}">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
+    <meta name="112732dc23a546617cbeacbb82b229c7e62354b6" content="8ad6720fe4147f289094e7b8cb2dc67c72112bb2" />
 
 </head>
 
