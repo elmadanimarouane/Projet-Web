@@ -31,7 +31,7 @@ class ArticleController extends Controller
         $article->verdict = $request->input('verdict');
 
         $article->save();
-        return redirect('accueil');
+        return redirect()->route('accueil');
 
     }
     public function index()

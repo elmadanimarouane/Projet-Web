@@ -22,7 +22,7 @@
     <!-- menu position. delete .uk-light to change black navbar to white (also you should change logo to dark one)-->
     <nav class="uk-navbar-container uk-light" uk-navbar="mode: click" uk-sticky="animation: uk-animation-slide-top; show-on-up: true">
         <!-- logo or title-->
-        <div class="uk-navbar-left nav-overlay"><a class="uk-navbar-item uk-logo" href="accueil">
+        <div class="uk-navbar-left nav-overlay"><a class="uk-navbar-item uk-logo" href="/">
                 <!--h3 Site Name--><img src="http://www.joydownload.com/content/icons/33/5379c73118628.png" alt="logo" width="64"></a></div>
         <!-- end logo or title-->
         <!-- menu-->
@@ -38,10 +38,8 @@
 					<li>{!! link_to_route('users', 'Utilisateurs') !!}</li>
 					@endif
                     <li><a href="{{ route('logout') }}">Déconnexion</a></li>
-                    <li><a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a></li>
                 </ul>
                 <ul class="uk-navbar-nav uk-hidden@s">
-                    <li><a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a></li>
                     <li><a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #mobile-navbar"></a></li>
                 </ul>
             </div>
