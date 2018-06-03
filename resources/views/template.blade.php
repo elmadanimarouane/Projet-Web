@@ -80,12 +80,12 @@
 				<li>{!! link_to_route('mesparis', 'Mes Paris') !!}
                         <!--span.uk-light(uk-icon="icon: code")-->
                         <!--| #{" "}Item #{i}#{j}--></li>
-                <li><a href="#">Mon compte
+                <li>{!! link_to_route('account', 'Mon compte') !!}
                         <!--span.uk-light(uk-icon="icon: code")-->
-                        <!--| #{" "}Item #{i}#{j}--></a></li>
-                <li><a href="#">Mes bénéfices
+                        <!--| #{" "}Item #{i}#{j}--></li>
+                <li>{!! link_to_route('chart', 'Suivi des gains') !!}
                         <!--span.uk-light(uk-icon="icon: code")-->
-                        <!--| #{" "}Item #{i}#{j}--></a></li>
+                        <!--| #{" "}Item #{i}#{j}--></li>
 				@if(Auth::check() and Auth::user()->isAdmin())
 				<li>{!! link_to_route('article.create', 'Ajouter un article') !!}</li>
 				<li>{!! link_to_route('users', 'Utilisateurs') !!}</li>
