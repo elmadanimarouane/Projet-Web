@@ -5,7 +5,7 @@
 @if(isset($info))
 <div class="row alert alert-info">{{ $info }}</div>
 @endif
-@foreach($articles->reverse() as $article)
+@foreach($articles as $article)
 <body>
 <div class="form">
 

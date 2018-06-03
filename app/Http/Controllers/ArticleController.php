@@ -36,7 +36,7 @@ class ArticleController extends Controller
     }
     public function index()
     {
-        $articles = article::paginate(2);
+        $articles = article::orderBy('id','desc')->paginate(2);
         $links = $articles->render();
         return view('articles.liste')->with('articles', $articles)->with('links', $links);
     }
