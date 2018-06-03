@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mirou's Bets</title>
+    <title>Polybets</title>
 
 
     <link rel='stylesheet prefetch' href= "{{ asset('https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/css/uikit.min.css') }}">
