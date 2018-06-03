@@ -75,7 +75,7 @@ class UserController extends Controller
 
         $user->type = $request->input('type');
         $user->update();
-        return redirect()->route('utilisateurs');
+        return redirect()->route('users');
     }
 
     /**
