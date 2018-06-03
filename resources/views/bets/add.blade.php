@@ -10,26 +10,26 @@
         <fieldset>
             {!! Form::open(['route' => 'bets.store']) !!}
             <div class="form-group {!! $errors->has('libteam') ? 'has-error' : '' !!}">
-                {!! Form::text('libmatch', null, ['class' => 'form-control', 'placeholder' => "Libellé du match"]) !!}
+                {!! Form::text('libmatch', null, ['class' => 'form-control', 'placeholder' => "Libellé du match", 'required' => 'required']) !!}
                 {!! $errors->first('libmatch', '<small class="help-block">:message</small>') !!}
             </div>
         </fieldset>
         <fieldset>
             <div class="form-group {!! $errors->has('libbet') ? 'has-error' : '' !!}">
-                {!! Form::text('libbet', null, ['class' => 'form-control', 'placeholder' => "Libellé du paris"]) !!}
+                {!! Form::text('libbet', null, ['class' => 'form-control', 'placeholder' => "Libellé du paris", 'required' => 'required']) !!}
                 {!! $errors->first('libbet', '<small class="help-block">:message</small>') !!}            </div>
         </fieldset>
         <fieldset>
             <h4>Somme misée</h4>
             <div class="form-group {!! $errors->has('betsum') ? 'has-error' : '' !!}">
-                {!! Form::number ('betsum', null, ['class' => 'form-control','step' => '0.01']) !!} €
+                {!! Form::number ('betsum', null, ['class' => 'form-control','step' => '0.01', 'required' => 'required']) !!} €
                 {!! $errors->first('betsum', '<small class="help-block">:message</small>') !!}
             </div>
         </fieldset>
         <fieldset>
             <h4>Côte du pari</h4>
             <div class="form-group {!! $errors->has('oddofbet') ? 'has-error' : '' !!}">
-                {!! Form::number ('oddofbet', null, ['class' => 'form-control','step' => '0.01']) !!}
+                {!! Form::number ('oddofbet', null, ['class' => 'form-control','step' => '0.01', 'required' => 'required']) !!}
                 {!! $errors->first('oddofbet', '<small class="help-block">:message</small>') !!}
             </div>
         </fieldset>
